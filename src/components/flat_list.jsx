@@ -9,6 +9,8 @@ const FlatList = (props) => {
           flat={flat}
           key={flat.lat}
           index={index}
+          selected={flat.name === props.selectedFlat.name}
+          selectFlat={props.selectFlat}
         />
       );
     });
